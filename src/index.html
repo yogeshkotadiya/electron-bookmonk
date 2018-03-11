@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>BookMonk</title>
+</head>
+<body>
+    <div class="message"></div>
+
+    <form class="new-link-form">
+        <label for="new-link-url" class="new-link-form--url--label">New Link</label>
+        <input type="url" name="" id="new-link-url" class="new-link-form--url" placeholder="Enter the URL" required>
+        <input type="submit" value="Submit" class="new-link-form--submit" disabled>
+
+        <section class="links"></section>
+
+        <section class="controls">
+            <button class="controls--clear-storage">Clear Storage</button>
+        </section>
+    </form>
+
+    <script>
+    require('./renderer.js')
+    </script>
+</body>
+</html>

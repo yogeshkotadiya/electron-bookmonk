@@ -1,0 +1,14 @@
+{
+  "name": "markdown-editor",
+  "version": "1.0.0",
+  "description": "MarkDown Editor built using Electron",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Yogesh Kotadiya",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.8.3"
+  }
+}
