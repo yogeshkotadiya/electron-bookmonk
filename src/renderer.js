@@ -1,6 +1,7 @@
 const link = document.getElementById('new-link-url');
 const linkSubmit = document.getElementsByClassName('new-link-form--submit');
 const linkForm = document.getElementsByClassName('new-link-form');
+const linkTemplate = document.getElementsById('link-template');
 
 link.addEventListener('keyup', () => {
     linkSubmit.disabled = !link.validity.valid;
@@ -9,6 +10,11 @@ link.addEventListener('keyup', () => {
 const parser = DOMParser();
 const parseRes = text => parser.parseFromString(text, 'text/html');
 const getTitle = nodes => nodes.querySelector('title').innerText;
+
+const addToPage = ({ title, url}) => {
+    const newlink = linkTemplate.content.cloneNode(true);
+
+};
 
 linkForm.addEventListener('submit', () => {
     event.preventDefault();
